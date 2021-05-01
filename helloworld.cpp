@@ -14,23 +14,29 @@ class Employee : AbstractEmployee //Employee繼承AbstractEmployee抽象化類�
   protected://將Name設置在protected使AskForPromotion可invoke
     string Name;
   public://public access modifier 公開可允許所有修改
-    void setName(string name){//setter
+    void setName(string name)
+    {//setter
       Name = name;
     }
-    string getName(){//getter
+    string getName()
+    {//getter
       return Name;
     }
-    void setCompany(string company){//setter
+    void setCompany(string company)
+    {//setter
       Company = company;
     }
-    string getCompany(){//getter
+    string getCompany()
+    {//getter
       return Company;
     }
-    void setAge(int age){//setter
+    void setAge(int age)
+    {//setter
       if(age>=18)
         Age = age;
     }
-    int getAge(){//getter
+    int getAge()
+    {//getter
       return Age;
     }
 
