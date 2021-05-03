@@ -107,10 +107,10 @@ class Teacher : public Employee//Teacher繼承Employee，並設為public，使Te
 int main()//主程式
 //The most common use of polymorphism is when a parent class reference is used to refer to a child class object
 {
-  Employee employee1 = Employee("Emma Watson", "WB company", 30);
+  Employee employee1 = Employee("Emma", "WB company", 30);
   Employee employee2 = Employee("RAKU", "DELTA", 28);//初始功能，無繼承有抽象，並設定Employee參數
 
-  Developer d = Developer("Emma Watson", "WB company", 30, "Python");//set Developer class argument
+  Developer d = Developer("Emma", "WB company", 30, "Python");//set Developer class argument
   Teacher t = Teacher("RAKU", "MY company", 28, "History");//set Teacher class argument
 
   Employee *e1 = &d;//pointer is going to hold and reference of Developer
